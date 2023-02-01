@@ -1,8 +1,8 @@
+import Fronted from "../templates/Fronted"
+
 function Main() {
   return (
-    <div>
-      Teste
-    </div>
+    <Fronted>Template</Fronted>
   )
 }
 
