@@ -8,8 +8,8 @@ const Header = () => {
   return (
     <S.Box>
       <Logo />
-      <Button />
       <Menu />
+      <Button />
     </S.Box>
   );
 };
