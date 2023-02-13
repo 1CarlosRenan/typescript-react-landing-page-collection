@@ -4,4 +4,13 @@ export const Container = styled.div`
   width: 100%;
   max-width: 1100px;
   margin: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  main {
+    flex: 1;
+    align-items: center;
+    display: flex;
+  }
 `;
