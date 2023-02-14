@@ -2,6 +2,9 @@ import ButtonContact from "../atoms/ButtonContact";
 import Fronted from "../templates/Fronted";
 import * as S from "./styles";
 
+import HeroHeaderImage from "../assets/kreed-header-image.png";
+import CardActivity from "../molecules/CardActivity";
+
 function Main() {
   return (
     <Fronted>
@@ -15,7 +18,10 @@ function Main() {
 
           <ButtonContact />
         </div>
-        <div>Coluna 2</div>
+        <S.ColumnImage>
+          <CardActivity />
+          <img src={HeroHeaderImage} alt="A woman doing a research." />
+        </S.ColumnImage>
       </S.Container>
     </Fronted>
   );
