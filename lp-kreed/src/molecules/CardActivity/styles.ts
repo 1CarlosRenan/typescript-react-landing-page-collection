@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   position: absolute;
-  top: 105px;
   left: 75px;
   background-color: #daaaff;
   color: #fff;
@@ -12,6 +11,10 @@ export const Container = styled.div`
   text-align: left;
   padding: 11px;
   overflow: hidden;
+
+  opacity: 0;
+  top: 50px;
+  animation: showOnPageActivity 0.75s linear forwards;
 
   small {
     font-size: 15px;
@@ -60,6 +63,17 @@ export const Container = styled.div`
       top: -54px;
       left: 47px;
       transform: rotate(-72deg);
+    }
+  }
+
+  @keyframes showOnPageActivity {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+      top: 105px;
     }
   }
 `;
