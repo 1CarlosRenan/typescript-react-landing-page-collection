@@ -1,4 +1,7 @@
-import { createGlobalStyle } from "styled-components"
+import { createGlobalStyle } from "styled-components";
+
+import Bkg1 from "../assets/background-1.png";
+import Bkg2 from "../assets/background-2.png";
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -12,6 +15,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
+    background: url(${Bkg2}) no-repeat 1010px, url(${Bkg1}) no-repeat 931px;
+    background-size: cover;
     background-color: #F8FDFF;
     font-family: 'Poppins', sans-serif;
   }
@@ -28,6 +33,6 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
     outline: none;
   }
-`
+`;
 
-export default GlobalStyle
+export default GlobalStyle;
